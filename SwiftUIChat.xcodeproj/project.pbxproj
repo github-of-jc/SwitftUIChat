@@ -13,9 +13,11 @@
 		93F021372606F01F0062F19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F021362606F01F0062F19C /* Assets.xcassets */; };
 		93F0213A2606F01F0062F19C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F021392606F01F0062F19C /* Preview Assets.xcassets */; };
 		93F0213D2606F01F0062F19C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0213B2606F01F0062F19C /* LaunchScreen.storyboard */; };
+		F0EF70F0D59C32A2A40A48AE /* Pods_SwiftUIChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68CE11239C2A3E295E4CA9A /* Pods_SwiftUIChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83FB03736D60BC4B131DCA29 /* Pods-SwiftUIChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIChat.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIChat/Pods-SwiftUIChat.debug.xcconfig"; sourceTree = "<group>"; };
 		93F0212D2606F01B0062F19C /* SwiftUIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F021302606F01B0062F19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F021322606F01B0062F19C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		93F021392606F01F0062F19C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93F0213C2606F01F0062F19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93F0213E2606F01F0062F19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FA78E2445BDB16BCACBFA4 /* Pods-SwiftUIChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIChat.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIChat/Pods-SwiftUIChat.release.xcconfig"; sourceTree = "<group>"; };
+		E68CE11239C2A3E295E4CA9A /* Pods_SwiftUIChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EF70F0D59C32A2A40A48AE /* Pods_SwiftUIChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26E66530018CEBD9003DA6BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83FB03736D60BC4B131DCA29 /* Pods-SwiftUIChat.debug.xcconfig */,
+				A0FA78E2445BDB16BCACBFA4 /* Pods-SwiftUIChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		93F021242606F01B0062F19C = {
 			isa = PBXGroup;
 			children = (
 				93F0212F2606F01B0062F19C /* SwiftUIChat */,
 				93F0212E2606F01B0062F19C /* Products */,
+				26E66530018CEBD9003DA6BD /* Pods */,
+				961FA78995C4101D3EC5E9A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		961FA78995C4101D3EC5E9A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E68CE11239C2A3E295E4CA9A /* Pods_SwiftUIChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93F021412606F01F0062F19C /* Build configuration list for PBXNativeTarget "SwiftUIChat" */;
 			buildPhases = (
+				78880CA316C0D1C3C954F1F6 /* [CP] Check Pods Manifest.lock */,
 				93F021292606F01B0062F19C /* Sources */,
 				93F0212A2606F01B0062F19C /* Frameworks */,
 				93F0212B2606F01B0062F19C /* Resources */,
+				74A918017BCF41A5F68D54FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74A918017BCF41A5F68D54FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIChat/Pods-SwiftUIChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIChat/Pods-SwiftUIChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIChat/Pods-SwiftUIChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78880CA316C0D1C3C954F1F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93F021292606F01B0062F19C /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		93F021422606F01F0062F19C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FB03736D60BC4B131DCA29 /* Pods-SwiftUIChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +374,7 @@
 		};
 		93F021432606F01F0062F19C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FA78E2445BDB16BCACBFA4 /* Pods-SwiftUIChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
